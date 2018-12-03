@@ -1,0 +1,23 @@
+{
+  "extends": ["tslint:recommended", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    // overrides
+    "no-debugger": false, // for debugging
+    "no-console": false, // for debugging
+    "member-access": false, // we never reference methods on Class Component instances - nor do we use inheritance
+    "interface-name": [true, "never-prefix"], // not necessary
+    "jsx-boolean-value": false,
+    "ordered-imports": false,
+    "semicolon": [true, "strict-bound-class-methods"],
+    "jsx-no-lambda": false,
+    "object-literal-sort-keys": false,
+    "no-empty": false,
+    "curly": false,
+    "no-duplicate-string": false,
+    "no-identical-functions": false,
+    "member-ordering": false
+  },
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  }
+}
